@@ -12,7 +12,8 @@ async function getSession(cookie: string): Promise<Session> {
 
   const session = await response.json();
 
-  return Object.keys(session).length > 0 ? session : null;
+  // return Object.keys(session).length > 0 ? session : null;
+  return session
 }
 
 export default async function RootLayout({
